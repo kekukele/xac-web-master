@@ -1,9 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<!--  <link rel="icon" href="/assets/img/favicon.png">-->
   <title>XAC AUTOMATION CORP.</title>
+  <link rel="stylesheet" href="assets/layui/css/layui.css">
+  <link rel="stylesheet" href="assets/static/css/index.css">
 </head>
 <body>
-  <h1>Hello XAC</h1>
+  <!-- nav部分 -->
+  <div class="nav index">
+    <div class="layui-container">
+      <!-- 公司logo -->
+      <div class="nav-logo">
+        <a href="./index.html">
+          <img src="./assets/static/img/logo-xac.png" alt="XAC AUTOMATION CORP.">
+        </a>
+      </div>
+      <div class="nav-list">
+        <button>
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="layui-nav" lay-filter="">
+          <li class="layui-nav-item" id="product-tab"><a href="./product/product.html">Product</a></li>
+          <li class="layui-nav-item" id="solution-tab"><a href="./solution/solution.html">Solution</a></li>
+          <li class="layui-nav-item" id="inquiry-tab"><a href="./inquiry/inquiry.html">Inquiry</a></li>
+          <li class="layui-nav-item" id="about-tab"><a href="./about/company.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- banner部分 -->
+  <div class="banner-height">
+    <div class="layui-carousel" id="banner">
+      <div carousel-item>
+        <img src="assets/static/img/banner1.jpg">
+        <img src="assets/static/img/banner2.jpg">
+        <img src="assets/static/img/banner_xac_1.jpg">
+        <img src="assets/static/img/banner_xac_2.jpg">
+        <img src="assets/static/img/banner_xac_3.jpg">
+      </div>
+    </div>
+  </div>
+  <!-- main部分 -->
+  <div class="index-product">
+    <div class="layui-container">
+      <p class="title">A Partner You Can Trust for Commerce Specific <a href="product/product.html">Products</a>.</p>
+      <div class="layui-row layui-col-space25">
+        <div class="layui-col-sm6 layui-col-md3">
+          <div class="content">
+            <div><img src="assets/static/img/Big_xac_icon1.png"></div>
+            <div>
+              <p class="label">ECR POS & Customer Facing Device</p>
+              <p>Secure Android platform - Integrated POS for ECR POS & Customer Facing Device</p>
+            </div>
+            <a href="./product/productDevice.html?type=pos">MORE ></a>
+          </div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md3 ">
+          <div class="content">
+            <div><img src="assets/static/img/Big_xac_icon2.png"></div>
+            <div>
+              <p class="label">Handheld & Desktop Use Case</p>
+              <p>Secure Android platform - Integrated POS for Handheld & Desktop use cases</p>
+            </div>
+            <a href="./product/productDevice.html?type=handheld">MORE ></a>
+          </div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md3 ">
+          <div class="content">
+            <div><img src="assets/static/img/Big_xac_icon3.png"></div>
+            <div>
+              <p class="label">Unattended Outdoor Payment Solution</p>
+              <p>Secure Android platform - Integrated POS for Unattended Outdoor Payment Modules / Terminal / Kiosk</p>
+            </div>
+            <a href="./product/productDevice.html?type=payment">MORE ></a>
+          </div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md3 ">
+          <div class="content">
+            <div><img src="assets/static/img/Big_xac_icon4.jpg"></div>
+            <div>
+              <p class="label">mPOS & Peripheral</p>
+              <p>mPOS/Printer/Payment Hub</p>
+            </div>
+            <a href="./product/productDevice.html?type=mpos">MORE ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="index-solution">
+    <div class="layui-container">
+      <p class="title">A Partner You Can Trust for Commerce Specific <a href="solution/solution.html">Solution</a>.</p>
+      <div class="layui-row layui-col-space25">
+        <div class="layui-col-sm6 layui-col-md4">
+          <div class="content">
+            <img src="assets/static/img/solution_xac_2.png">
+            <p class="p1"><a href="./solution/solutionTms.html">Terminal Management System 2.0(TMS 2.0)</a></p>
+            <br><br>
+          </div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md4">
+          <div class="content">
+            <img src="assets/static/img/solution_xac_3.png">
+            <p class="p1"><a href="./solution/solutionRki.html">XAC Remote Key Injection (RKI) Solution</a></p>
+            <br><br>
+          </div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md4">
+          <div class="content">
+            <img src="assets/static/img/solution_xac_1.png">
+            <p class="p1"><a href="./solution/solutionDms.html">XAC Cloud Device Management System (DMS)</a></p>
+            <br><br>
+          </div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md4">
+          <div class="content">
+            <img src="assets/static/img/solution_xac_4.png">
+            <p class="p1"><a href="./solution/solutionRma.html">Remote Diagnostics (Cloud RMA)</a></p>
+            <br><br>
+          </div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md4">
+          <div class="content">
+            <img src="assets/static/img/solution_xac_5.png">
+            <p class="p1"><a href="./solution/solutionPayment.html">Payment Applications</a></p>
+            <br><br>
+          </div>
+        </div>
+      </div>
+<!--      <div class="service-more"><a href="">MORE</a></div>-->
+    </div>
+  </div>
+
+  <!-- footer部分 -->
+  <div class="footer">
+    <div class="layui-container">
+      <div class="layui-row footer-contact">
+        <div class="layui-row">
+          <div class="layui-col-sm6 layui-col-md8 layui-col-lg5">
+            <img src="./assets/static/img/footer_logo.png">
+            <p class="concat-title">XAC AUTOMATION CORP.</p>
+            <p>4F., No. 30 Industry E. Road IX, Science-Based</p>
+            <p>Industrial Park,Hsin-Chu, 300, Taiwan, ROC</p>
+            <p>TEL: +886-3-577-2738</p>
+            <p>FAX: +886-3-577-6678</p>
+            <p>marketing@xac.com.tw</p>
+          </div>
+          <div class="layui-col-sm6 layui-col-md4 layui-col-lg3 phone-not-view">
+            <p class="concat-title">Product</p>
+            <div class="line"></div>
+            <p><a href="javascript:;">ECR POS & Customer Facing Device</a></p>
+            <p><a href="javascript:;">Handheld & Desktop Use Case</a></p>
+            <p><a href="javascript:;">Unattended Outdoor Payment Solution</a></p>
+            <p><a href="javascript:;">PINPAD/ mPOS/ Peripheral</a></p>
+          </div>
+          <div class="layui-col-sm6 layui-col-md4 layui-col-lg2 phone-not-view">
+            <p class="concat-title">Solution</p>
+            <div class="line"></div>
+            <p>Cloud DMS System</p>
+            <p>Payment Application</p>
+            <p class="concat-title">Inquiry</p>
+            <div class="line"></div>
+            <p>Inquiry</p>
+            <p>Ares</p>
+          </div>
+          <div class="layui-col-sm6 layui-col-md4 layui-col-lg2 phone-not-view">
+            <p class="concat-title">About</p>
+            <div class="line"></div>
+            <p>Company</p>
+            <p>Corporate Governance</p>
+            <p>Press & Event</p>
+            <p>Financial Report</p>
+            <p>Investor Relations</p>
+            <p>Careers</p>
+            <p>Policy</p>
+            <p>Contact</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><img src="./assets/static/img/top.svg"></a>
+
+<script src="assets/layui/layui.js"></script>
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+  layui.config({
+    base: 'assets/static/js/'
+  }).use('firm');
+
+</script>
+<script src="./assets/static/js/jquery.min.js"></script>
+<script src="./assets/static/js/index.js"></script>
 </body>
 </html>

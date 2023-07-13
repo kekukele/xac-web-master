@@ -1,0 +1,190 @@
+.productsHtml {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.project-one__single {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    border: solid 1px rgba(142, 140, 148, 0.3);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.project-one__img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.project-one__single:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-color: rgba(227, 227, 227, 0.3);
+    transform: scale(1, 0);
+    transition: transform 500ms ease;
+    transform-origin: top center;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.fadeInLeft:hover .project-one__single:before {
+    transform: scale(1, 1);
+    transform-origin: bottom center;
+}
+
+.project-one__img img {
+    width: 100%;
+    border-radius: 8px;
+    transform: scale(1);
+    transition: transform 500ms ease;
+}
+
+.fadeInLeft:hover .project-one__img img {
+    transform: scale(1.1);
+}
+
+.fadeInLeft:hover .project-one__content:after {
+    opacity: 1;
+    transform: scaleY(1.0);
+}
+
+.fadeInLeft:hover .project-one__desc,
+.fadeInLeft:hover .project-one__title {
+    color: #ffffff;
+}
+
+.fadeInLeft:hover .project-one__arrow a {
+    color: #42d9be;
+}
+
+.project-one__single {
+    margin-bottom: 70px;
+}
+
+.project-one__single {
+    margin-bottom: 30px;
+}
+
+.project-one__content {
+    position: relative;
+    display: block;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 5px 20px 0px rgb(182, 182, 182);
+    border-radius: 8px;
+    padding: 32px 40px 39px;
+    margin: -108px 30px 20px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    z-index: 2;
+}
+
+.project-one__content:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgb(25, 137, 251);
+    box-shadow: 0px 10px 60px 0px rgb(0, 0, 0, .07);
+    transition: all 500ms ease;
+    opacity: 1;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    transform: scaleY(0);
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.fadeInLeft:hover .project-one__content:after {
+    opacity: 1;
+    transform: scaleY(1.0);
+}
+
+.project-one__content {
+    padding: 22px 30px 29px;
+    margin-top: -20px;
+}
+
+.project-one__desc {
+    font-size: 10px;
+    line-height: 20px;
+    transition: all 500ms ease;
+    width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.project-one__tagline {
+    font-size: 15px;
+    color: #bea112;
+    margin-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.project-one__title {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 40px;
+    transition: all 500ms ease;
+}
+
+.project-one__title {
+    color: #1b1825;
+    transition: all 500ms ease;
+}
+
+.project-one__title {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.project-one__title {
+    font-size: 20px;
+    line-height: 30px;
+}
+.project-one__arrow {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+.project-one__arrow a {
+    color: #1b1825;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease;
+}
+
+.project-one__arrow {
+    top: 50%;
+    right: 20px;
+}
+
+.project-one__arrow {
+    right: 5px;
+}

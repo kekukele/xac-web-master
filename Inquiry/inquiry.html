@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <title>XAC - Inquiry</title>
+  <link rel="stylesheet" href="../assets/layui/css/layui.css">
+  <link rel="stylesheet" href="../assets/static/css/index.css">
+</head>
+<body>
+  <!-- nav部分 -->
+  <div class="nav index">
+    <div class="layui-container">
+      <!-- 公司logo -->
+      <div class="nav-logo">
+        <a href="../index.html">
+          <img src="../assets/static/img/logo-xac.png" alt="XAC AUTOMATION CORP.">
+        </a>
+      </div>
+      <div class="nav-list">
+        <button>
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="layui-nav" lay-filter="">
+          <li class="layui-nav-item" id="product-tab"><a href="../product/product.html">Product</a></li>
+          <li class="layui-nav-item" id="solution-tab"><a href="../solution/solution.html">Solution</a></li>
+          <li class="layui-nav-item" id="inquiry-tab"><a href="../inquiry/inquiry.html">Inquiry</a></li>
+          <li class="layui-nav-item" id="about-tab"><a href="../about/company.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- banner部分 -->
+  <div class="banner inquiry-bg">
+    <div class="title">
+      <p>Inquiry</p>
+      <p class="desc">A Partner You Can Trust</p>
+    </div>
+  </div>
+  <!-- main部分 -->
+  <div class="main-inquiry">
+    <div class="layui-container layui-row">
+      <ul class="laytab">
+        <li class="layui-this">Inquiry</li><li>ARES</li>
+      </ul>
+        <form action="http://" class="contact100-form validate-form">
+          <div class="wrap-input100 rs1-wrap-input100 " data-validate="Country is required">
+            <span class="label-input100">Country</span>
+            <select id="select" class="input100 form-control">
+              <option value="">Please choose</option>
+              <option value="1">China</option>
+              <option value="2">US</option>
+              <option value="3">France</option>
+              <option value="4">Russia</option>
+              <option value="5">UK</option>
+            </select>
+          </div>
+
+          <div class="wrap-input100 rs1-wrap-input100 " data-validate="Company Name is required">
+            <span class="label-input100">Company Name</span>
+            <input class="input100 form-control" type="text" name="name" placeholder="Company Name" autocomplete="off">
+          </div>
+
+          <div class="wrap-input100 rs1-wrap-input100 " data-validate="Name is required">
+            <span class="label-input100">Your Name</span>
+            <input class="input100 form-control" type="text" name="name" placeholder="Your Name" autocomplete="off">
+          </div>
+          <div class="wrap-input100 rs1-wrap-input100 " data-validate="Valid email is required: ex@abc.xyz">
+            <span class="label-input100">E-mail</span>
+            <input class="input100 form-control" type="text" name="email" placeholder="E-mail" autocomplete="off">
+          </div>
+          <div class="wrap-input100 rs1-wrap-input100 " data-validate="Name is required">
+            <span class="label-input100">Telephone</span>
+            <input class="input100 form-control" type="text" name="name1" placeholder="Telephone" autocomplete="off">
+          </div>
+          <div class="wrap-input100 rs1-wrap-input100 " data-validate="Extension Number is required">
+            <span class="label-input100">Extension Number</span>
+            <input class="input100 form-control" type="text" name="name2" placeholder="Extension Number" autocomplete="off">
+          </div>
+          <div class="wrap-input100" data-validate="Name is required">
+            <span class="label-input100">Business Type</span>
+            <div class="wrap-check">
+              <input name='a1' type="checkbox" value="a1"><label>Trade company</label>
+              <input name='a2' type="checkbox" value="a2" ><label>Manufacturer</label>
+              <input name='a3' type="checkbox" checked="checked" value="a3"/><label>Distributor</label>
+              <input name='a4' type="checkbox" checked value="a4"/><label>System Integrator(SI)</label>
+              <input name='a5' type="checkbox" checked value="a5"/><label>Value-added Reseller(VAR)</label>
+              <input name='a6' type="checkbox" checked value="a6"/><label>Other</label>
+            </div>
+          </div>
+          <div class="wrap-input100" data-validate="Message is required">
+            <span class="label-input100">Your Inquiry</span>
+            <textarea class="input100 form-control" name="message" placeholder=" Write your message here..."></textarea>
+          </div>
+          <div class="form-btn">
+            <submit><b>SEND</b></submit>
+          </div>
+        </form>
+      <div class="tabCour">
+        <div class="flex">
+          <p class="title">ARES</p>
+          <p class="desc">ARES forum is the portal for all XAC partners to interact with engineers and fetch technical resources in payment application development.</p>
+          <a href="https://ares.xac.com.tw/login" title="https://ares.xac.com.tw/login" target="_blank">
+            <img src="../assets/static/img/ares.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer部分 -->
+  <div class="footer">
+    <div class="layui-container">
+      <div class="layui-row footer-contact">
+        <div class="layui-row">
+          <div class="layui-col-sm6 layui-col-md8 layui-col-lg5">
+            <img src="../assets/static/img/footer_logo.png">
+            <p class="concat-title">XAC AUTOMATION CORP.</p>
+            <p>4F., No. 30 Industry E. Road IX, Science-Based</p>
+            <p>Industrial Park,Hsin-Chu, 300, Taiwan, ROC</p>
+            <p>TEL: +886-3-577-2738</p>
+            <p>FAX: +886-3-577-6678</p>
+            <p>marketing@xac.com.tw</p>
+          </div>
+          <div class="layui-col-sm6 layui-col-md4 layui-col-lg3 phone-not-view">
+            <p class="concat-title">Product</p>
+            <div class="line"></div>
+            <p><a href="javascript:;">ECR POS & Customer Facing Device</a></p>
+            <p><a href="javascript:;">Handheld & Desktop Use Case</a></p>
+            <p><a href="javascript:;">Unattended Outdoor Payment Solution</a></p>
+            <p><a href="javascript:;">PINPAD/ mPOS/ Peripheral</a></p>
+          </div>
+          <div class="layui-col-sm6 layui-col-md4 layui-col-lg2 phone-not-view">
+            <p class="concat-title">Solution</p>
+            <div class="line"></div>
+            <p>Cloud DMS System</p>
+            <p>Payment Application</p>
+            <p class="concat-title">Inquiry</p>
+            <div class="line"></div>
+            <p>Inquiry</p>
+            <p>Ares</p>
+          </div>
+          <div class="layui-col-sm6 layui-col-md4 layui-col-lg2 phone-not-view">
+            <p class="concat-title">About</p>
+            <div class="line"></div>
+            <p>Company</p>
+            <p>Corporate Governance</p>
+            <p>Press & Event</p>
+            <p>Financial Report</p>
+            <p>Investor Relations</p>
+            <p>Careers</p>
+            <p>Policy</p>
+            <p>Contact</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><img src="../assets/static/img/top.svg"></a>
+<script src="../assets/layui/layui.js"></script>
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+  layui.config({
+    base: '../assets/static/js/'
+  }).use('firm');
+</script>
+<script src="../assets/static/js/jquery.min.js"></script>
+<script src="../assets/static/js/index.js"></script>
+</body>
+</html>
